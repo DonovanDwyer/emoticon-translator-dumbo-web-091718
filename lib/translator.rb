@@ -9,7 +9,8 @@ def load_library(file_path)
     get_meaning[v[1]] = k
     get_emoticon[v[0]] = v[1]
   end
-  binding.pry
+  get_meaning
+  get_emoticon
 end
 
 def get_japanese_emoticon
