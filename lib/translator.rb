@@ -3,9 +3,10 @@ require "pry"
 
 def load_library(file_path)
   emoticons = YAML.load_file(file_path)
-  emoticons.each do |k,v|
+  emo_hash = {}
+  emoticons.each_with_object({}) {|
+    
   binding.pry
-  end
 end
 
 def get_japanese_emoticon
