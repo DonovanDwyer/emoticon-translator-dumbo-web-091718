@@ -3,14 +3,12 @@ require "pry"
 
 def load_library(file_path)
   emoticons = YAML.load_file(file_path)
-  get_meaning = {}
-  get_emoticon = {}
+  emo_hash = {}
   emoticons.each do |k,v|
-    get_meaning[v[1]] = k
-    get_emoticon[v[0]] = v[1]
+    emo_hash[:get_meaning] = {v[1] => k}
+    emo_hash[:get_emoticon] = {v[0] => v[1]}
   end
-  get_meaning
-  get_emoticon
+  emo_hash
 end
 
 def get_japanese_emoticon
