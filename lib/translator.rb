@@ -8,7 +8,7 @@ def load_library(file_path)
   get_emoticon = emoticons.each_with_object({}) {|a,h| h[a[1][0]] = a[1][1]}
   emo_hash["get_meaning"] = get_meaning
   emo_hash["get_emoticon"] = get_emoticon
-  binding.pry
+  #binding.pry
   emo_hash
 end
 
