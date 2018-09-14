@@ -7,7 +7,7 @@ def load_library(file_path)
   get_emoticon = {}
   emoticons.each do |k,v|
     get_meaning[v[1]] = k
-    get_emoticon[v[0]]
+    get_emoticon[v[0]] = v[1]
   end
   binding.pry
 end
