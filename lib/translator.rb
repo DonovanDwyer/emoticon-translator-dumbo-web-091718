@@ -14,11 +14,9 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   emoticons = load_library(file_path)
-  binding.pry
-  #if emoticons["get_emoticon"].values.include?(emoticon)
-    return emoticons["get_emoticon"][emoticon]
-    puts "Sorry, that emoticon was not found"
-  #end
+  #binding.pry
+  return emoticons["get_emoticon"][emoticon] if emoticons["get_emoticon"].keys.include?(emoticon)
+  puts "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning
