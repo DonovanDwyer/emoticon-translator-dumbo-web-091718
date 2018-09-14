@@ -17,8 +17,8 @@ def get_japanese_emoticon(file_path, emoticon)
   if emoticons["get_emoticon"].values.include?(emoticon)
     return emoticons["get_emoticon"][emoticon]
   else
-    puts "Sorry"
-  
+    puts "Sorry, that emoticon was not found"
+  end
 end
 
 def get_english_meaning
